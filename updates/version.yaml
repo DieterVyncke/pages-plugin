@@ -1,0 +1,6 @@
+1.0.1:
+    - 'First version of pages'
+    - create_page_table.php
+1.0.3:
+    - 'First version of pages block'
+    - create_page_blocks_table.php

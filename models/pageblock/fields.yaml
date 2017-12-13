@@ -1,0 +1,17 @@
+# ===================================
+#  Form Field Definitions
+# ===================================
+
+fields:
+    title:
+         label: Title
+         span: left
+    body:
+        label: Body
+        span: left
+        type: richeditor
+        toolbarButtons: italic|bold|link|formatUL|insertLink|paragraphFormat|clearFormatting
+    photo:
+        label: Photo
+        type: mediafinder
+        mode: image

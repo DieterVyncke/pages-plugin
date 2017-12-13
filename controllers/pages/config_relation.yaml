@@ -1,0 +1,16 @@
+# ===================================
+#  Relation Behavior Config
+# ===================================
+
+pageblocks:
+    label: Page Block
+    manage:
+        list: ~/plugins/dieter/pages/models/pageblock/columns.yaml
+        form: ~/plugins/dieter/pages/models/pageblock/fields.yaml
+    view:
+        list: ~/plugins/dieter/pages/models/pageblock/columns.yaml
+        defaultSort:
+            column: sort_order
+            direction: asc
+    toolbar:
+        buttons: block_reorder_toolbar

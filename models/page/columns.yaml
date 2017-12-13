@@ -1,0 +1,15 @@
+# ===================================
+#  List Column Definitions
+# ===================================
+
+columns:
+    title:
+        label: Title
+        searchable: true
+    slug:
+        lable: Slug
+    type:
+        label: Page type
+    sort_order:
+        label: Order number
+        invisible: true

@@ -1,0 +1,9 @@
+# ===================================
+#  Form Field Definitions
+# ===================================
+
+fields:
+    photo:
+        label: photo
+        type: mediafinder
+        mode: image

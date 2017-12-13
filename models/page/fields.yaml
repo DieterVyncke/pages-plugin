@@ -1,0 +1,16 @@
+# ===================================
+#  Form Field Definitions
+# ===================================
+
+fields:
+    type:
+        label: Page Type
+        span: left
+        type: dropdown
+    title:
+        label: Title
+        span: left
+    slug:
+        label: Slug
+        span: right
+        preset: title

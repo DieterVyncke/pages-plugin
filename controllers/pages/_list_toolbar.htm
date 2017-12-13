@@ -1,0 +1,19 @@
+<div data-control="toolbar">
+    <a
+        href="<?= Backend::url('dieter/pages/pages/create') ?>"
+        class="btn btn-primary oc-icon-plus">
+        New Page
+    </a>
+	<button
+		id="updatePosition"
+		class="btn btn-reorder oc-icon-list-ol"
+		disabled="disabled"
+		onclick="$(this).data('request-data', {
+			checked: $('.html5sortable .control-list').listWidget('getChecked')
+		} )"
+		data-request-success="initializeSorting();"
+		data-request="onUpdatePagePosition"
+		data-stripe-load-indicator>
+		Update sort order
+	</button>
+</div>

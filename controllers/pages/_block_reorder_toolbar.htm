@@ -1,0 +1,45 @@
+<a
+    data-control="popup"
+    data-size="huge"
+    data-handler="onRelationButtonCreate"
+    href="javascript:;"
+    class="btn btn-sm btn-secondary oc-icon-file">
+    <?= e(trans('backend::lang.relation.create_name', ['name'=>trans($relationLabel)])) ?>
+</a>
+
+<?php if ($relationViewMode == 'single'): ?>
+    <button
+        class="btn btn-sm btn-secondary oc-icon-trash-o"
+        data-request="onRelationButtonDelete"
+        data-request-confirm="<?= e(trans('backend::lang.relation.delete_confirm')) ?>"
+        data-stripe-load-indicator>
+        <?= e(trans('backend::lang.relation.delete')) ?>
+    </button>
+<?php else: ?>
+    <button
+        class="btn btn-sm btn-secondary oc-icon-trash-o"
+        onclick="$(this).data('request-data', {
+            checked: $('#<?= $this->relationGetId('view') ?> .control-list').listWidget('getChecked')
+        })"
+        disabled="disabled"
+        data-request="onRelationButtonDelete"
+        data-request-confirm="<?= e(trans('backend::lang.relation.delete_confirm')) ?>"
+        data-trigger-action="enable"
+        data-trigger="#<?= $this->relationGetId('view') ?> .control-list input[type=checkbox]"
+        data-trigger-condition="checked"
+        data-stripe-load-indicator>
+        <?= e(trans('backend::lang.relation.delete')) ?>
+    </button>
+<?php endif ?>
+
+<button
+    id="updatePosition"
+    class="btn btn-reorder oc-icon-list-ol"
+    disabled="disabled"
+    onclick="$(this).data('request-data', {
+    checked: $('.html5sortable .control-list').listWidget('getChecked'), page_id: <?php echo $this->formGetModel()->id; ?> })"
+    data-request-success="initializeSorting();"
+    data-request="onUpdateBlockPosition"
+    data-stripe-load-indicator>
+    Update sort order
+</button>

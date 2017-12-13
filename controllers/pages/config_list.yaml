@@ -1,0 +1,45 @@
+# ===================================
+#  List Behavior Config
+# ===================================
+
+# Model List Column configuration
+list: $/dieter/pages/models/page/columns.yaml
+
+# Model Class name
+modelClass: Dieter\Pages\Models\Page
+
+# List Title
+title: Manage Pages
+
+# Link URL for each record
+recordUrl: dieter/pages/pages/update/:id
+
+# Message to display if the list is empty
+noRecordsMessage: backend::lang.list.no_records
+
+# Records to display per page
+recordsPerPage: 20
+
+# Displays the sorting link on each column
+# showTree: true
+# treeExpanded: true
+
+# Default sorting column
+defaultSort:
+    column: sort_order
+    direction: asc
+
+# Display checkboxes next to each record
+showCheckboxes: true
+
+customViewPath:
+    $/dieter/pages/controllers/pages/lists
+
+# Toolbar widget configuration
+toolbar:
+    # Partial for toolbar buttons
+    buttons: list_toolbar
+
+    # Search widget configuration
+    search:
+        prompt: backend::lang.list.search_prompt

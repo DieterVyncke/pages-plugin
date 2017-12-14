@@ -13,8 +13,9 @@ class CreatePagePhotosTable extends Migration
             $table->increments('id');
             $table->timestamps();
 			$table->integer('sort_order')->nullable();
-			$table->integer('page_id')->unsigned()->nullable()->index();
-			$table->string('photo')->nullable();
+			$table->integer('page_id')->length(11)->unsigned();
+			$table->foreign('page_id')->references('id')->on('dieter_pages_page');
+			$table->string('photo');
         });
     }
 

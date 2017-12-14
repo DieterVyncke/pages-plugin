@@ -21,3 +21,12 @@ tabs:
              label: Page blocks
              type: partial
              tab: Page blocks
+         photo:
+             label: Photo
+             type: mediafinder
+             mode: image
+             tab: Media
+         pagephoto:
+             label: Page photo
+             type: partial
+             tab: Media

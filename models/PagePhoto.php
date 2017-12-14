@@ -1,13 +1,17 @@
 <?php namespace Dieter\Pages\Models;
 
 use Model;
+use Cms\Classes\MediaLibraryItem;
+use Cms\Classes\MediaLibrary;
 
 /**
  * PagePhoto Model
  */
 class PagePhoto extends Model
 {
+	use \October\Rain\Database\Traits\SimpleTree;
 	use \October\Rain\Database\Traits\Sortable;
+
     /**
      * @var string The database table used by the model.
      */
@@ -18,10 +22,17 @@ class PagePhoto extends Model
      */
     protected $guarded = ['*'];
 
+	public function getPhotoThumbAttribute()
+	{
+		return MediaLibrary::url( $this->photo );
+	}
+
     /**
      * @var array Fillable fields
      */
-    protected $fillable = [];
+    protected $fillable = [
+		'page'
+	];
 
     /**
      * @var array Relations

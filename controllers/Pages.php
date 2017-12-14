@@ -4,6 +4,7 @@ use BackendMenu;
 use Backend\Classes\Controller;
 use Dieter\Pages\Models\Page;
 use Dieter\Pages\Models\PageBlock;
+use Dieter\Pages\Models\PagePhoto;
 use Flash;
 
 /**
@@ -48,6 +49,17 @@ class Pages extends Controller
 	    $this->initRelation($model, 'pageblocks');
 
 	    return $this->relationRefresh('pageblocks');
+	}
+
+	public function update_onUpdatePhotoPosition()
+	{
+		$this->reorder( PagePhoto::class );
+
+	    $model = Page::find(post('page_id'));
+	    $this->initForm($model);
+	    $this->initRelation($model, 'pagephotos');
+
+	    return $this->relationRefresh('pagephotos');
 	}
 
 	protected function reorder( $model )

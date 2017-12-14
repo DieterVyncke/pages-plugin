@@ -61,7 +61,8 @@ class Page extends Model
      */
     public $hasOne = [];
 	public $hasMany = [
-		'pageblocks' => [ 'Dieter\Pages\Models\PageBlock' ],
+		'pageblocks' => [ 'Dieter\Pages\Models\PageBlock', 'delete' => true ],
+		'pagephotos' => [ 'Dieter\Pages\Models\PagePhoto', 'delete' => true ],
 	];
     public $belongsTo = [];
     public $belongsToMany = [];

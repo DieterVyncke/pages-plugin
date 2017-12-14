@@ -14,3 +14,16 @@ pageblocks:
             direction: asc
     toolbar:
         buttons: block_reorder_toolbar
+
+pagephotos:
+    label: Page Photo
+    manage:
+        list: ~/plugins/dieter/pages/models/pagephoto/columns.yaml
+        form: ~/plugins/dieter/pages/models/pagephoto/fields.yaml
+    view:
+        list: ~/plugins/dieter/pages/models/pagephoto/columns.yaml
+        defaultSort:
+            column: sort_order
+            direction: asc
+    toolbar:
+        buttons: photo_reorder_toolbar

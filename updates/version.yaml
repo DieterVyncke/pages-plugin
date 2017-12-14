@@ -4,3 +4,6 @@
 1.0.3:
     - 'First version of pages block'
     - create_page_blocks_table.php
+1.0.4:
+    - 'First version of pages photos'
+    - create_page_photos_table.php

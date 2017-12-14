@@ -17,6 +17,7 @@ class CreatePageTable extends Migration
  		   	$table->string('type');
 			$table->string('slug')->index()->unique();
 			$table->integer('sort_order')->nullable();
+			$table->string('photo')->nullable();
         });
     }
 

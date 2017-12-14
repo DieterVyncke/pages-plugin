@@ -3,6 +3,10 @@
 # ===================================
 
 columns:
-    id:
-        label: ID
-        searchable: true
+    photoThumb:
+        label: Photo
+        type: partial
+        sortable: no
+    sort_order:
+        label: Order
+        invisible: true

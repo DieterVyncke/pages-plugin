@@ -6,26 +6,26 @@
 name: Page
 
 # Model Form Field configuration
-form: $/dieter/pages/models/page/fields.yaml
+form: $/DieterVyncke/pages/models/page/fields.yaml
 
 # Model Class name
-modelClass: Dieter\Pages\Models\Page
+modelClass: DieterVyncke\Pages\Models\Page
 
 # Default redirect location
-defaultRedirect: dieter/pages/pages
+defaultRedirect: dietervyncke/pages/pages
 
 # Create page
 create:
     title: Create Page
-    redirect: dieter/pages/pages/update/:id
-    redirectClose: dieter/pages/pages
+    redirect: dietervyncke/pages/pages/update/:id
+    redirectClose: dietervyncke/pages/pages
 
 # Update page
 update:
     title: Edit Page
-    redirect: dieter/pages/pages/
-    redirectClose: dieter/pages/pages
-    form: $/dieter/pages/models/page/fields_update.yaml
+    redirect: dietervyncke/pages/pages/
+    redirectClose: dietervyncke/pages/pages
+    form: $/dietervyncke/pages/models/page/fields_update.yaml
 
 # Preview page
 preview:

@@ -1,4 +1,4 @@
-<?php namespace Dieter\Pages\Models;
+<?php namespace DieterVyncke\Pages\Models;
 
 use Model;
 
@@ -24,7 +24,7 @@ class Page extends Model
     /**
      * @var string The database table used by the model.
      */
-    public $table = 'dieter_pages_page';
+    public $table = 'dietervyncke_pages_page';
 
     /**
      * @var array Guarded fields
@@ -61,8 +61,8 @@ class Page extends Model
      */
     public $hasOne = [];
 	public $hasMany = [
-		'pageblocks' => [ 'Dieter\Pages\Models\PageBlock', 'delete' => true ],
-		'pagephotos' => [ 'Dieter\Pages\Models\PagePhoto', 'delete' => true ],
+		'pageblocks' => [ 'DieterVyncke\Pages\Models\PageBlock', 'delete' => true ],
+		'pagephotos' => [ 'DieterVyncke\Pages\Models\PagePhoto', 'delete' => true ],
 	];
     public $belongsTo = [];
     public $belongsToMany = [];

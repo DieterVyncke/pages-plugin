@@ -3,16 +3,16 @@
 # ===================================
 
 # Model List Column configuration
-list: $/dieter/pages/models/page/columns.yaml
+list: $/DieterVyncke/pages/models/page/columns.yaml
 
 # Model Class name
-modelClass: Dieter\Pages\Models\Page
+modelClass: DieterVyncke\Pages\Models\Page
 
 # List Title
 title: Manage Pages
 
 # Link URL for each record
-recordUrl: dieter/pages/pages/update/:id
+recordUrl: dietervyncke/pages/pages/update/:id
 
 # Message to display if the list is empty
 noRecordsMessage: backend::lang.list.no_records
@@ -33,7 +33,7 @@ defaultSort:
 showCheckboxes: true
 
 customViewPath:
-    $/dieter/pages/controllers/pages/lists
+    $/dietervyncke/pages/controllers/pages/lists
 
 # Toolbar widget configuration
 toolbar:

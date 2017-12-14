@@ -1,4 +1,4 @@
-<?php namespace Dieter\Pages\Updates;
+<?php namespace DieterVyncke\Pages\Updates;
 
 use Schema;
 use October\Rain\Database\Schema\Blueprint;
@@ -8,7 +8,7 @@ class CreatePageTable extends Migration
 {
     public function up()
     {
-        Schema::create('dieter_pages_page', function(Blueprint $table) {
+        Schema::create('dietervyncke_pages_page', function(Blueprint $table) {
 			$table->engine = 'InnoDB';
  		   	$table->increments('id');
  		   	$table->timestamp('created_at')->nullable();
@@ -23,6 +23,6 @@ class CreatePageTable extends Migration
 
     public function down()
     {
-        Schema::dropIfExists('dieter_pages_page');
+        Schema::dropIfExists('dietervyncke_pages_page');
     }
 }

@@ -1,4 +1,4 @@
-<?php namespace Dieter\Pages\Models;
+<?php namespace DieterVyncke\Pages\Models;
 
 use Model;
 
@@ -13,7 +13,7 @@ class PageBlock extends Model
     /**
      * @var string The database table used by the model.
      */
-    public $table = 'dieter_pages_page_blocks';
+    public $table = 'dietervyncke_pages_page_blocks';
 
     /**
      * @var array Guarded fields
@@ -31,7 +31,7 @@ class PageBlock extends Model
     public $hasOne = [];
     public $hasMany = [];
 	public $belongsTo = [
-   		'page' => [ 'Dieter\Pages\Models\Page' ],
+   		'page' => [ 'DieterVyncke\Pages\Models\Page' ],
    	];
     public $belongsToMany = [];
     public $morphTo = [];

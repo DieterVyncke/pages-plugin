@@ -1,4 +1,4 @@
-<?php namespace Dieter\Pages;
+<?php namespace DieterVyncke\Pages;
 
 use Backend;
 use System\Classes\PluginBase;
@@ -18,7 +18,7 @@ class Plugin extends PluginBase
         return [
             'name'        => 'pages',
             'description' => 'Pages module using database',
-            'author'      => 'dieter',
+            'author'      => 'DieterVyncke',
             'icon'        => 'icon-leaf'
         ];
     }
@@ -53,7 +53,7 @@ class Plugin extends PluginBase
         return []; // Remove this line to activate
 
         return [
-            'Dieter\Pages\Components\MyComponent' => 'myComponent',
+            'DieterVyncke\Pages\Components\MyComponent' => 'myComponent',
         ];
     }
 
@@ -67,7 +67,7 @@ class Plugin extends PluginBase
         return []; // Remove this line to activate
 
         return [
-            'dieter.pages.some_permission' => [
+            'DieterVyncke.pages.some_permission' => [
                 'tab' => 'pages',
                 'label' => 'Some permission'
             ],
@@ -84,9 +84,9 @@ class Plugin extends PluginBase
         return [
             'pages' => [
                 'label'       => 'Pages',
-                'url'         => Backend::url('dieter/pages/Pages'),
+                'url'         => Backend::url('dietervyncke/pages/Pages'),
                 'icon'        => 'icon-leaf',
-                'permissions' => ['dieter.pages.*'],
+                'permissions' => ['DieterVyncke.pages.*'],
                 'order'       => 500,
             ],
         ];

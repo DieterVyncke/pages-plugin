@@ -1,4 +1,4 @@
-<?php namespace Dieter\Pages\Models;
+<?php namespace DieterVyncke\Pages\Models;
 
 use Model;
 use Cms\Classes\MediaLibraryItem;
@@ -15,7 +15,7 @@ class PagePhoto extends Model
     /**
      * @var string The database table used by the model.
      */
-    public $table = 'dieter_pages_page_photos';
+    public $table = 'dietervyncke_pages_page_photos';
 
     /**
      * @var array Guarded fields
@@ -40,7 +40,7 @@ class PagePhoto extends Model
     public $hasOne = [];
     public $hasMany = [];
     public $belongsTo = [
-		'page' => [ 'Dieter\Pages\Models\Page' ],
+		'page' => [ 'DieterVyncke\Pages\Models\Page' ],
 	];
     public $belongsToMany = [];
     public $morphTo = [];

@@ -1,10 +1,10 @@
-<?php namespace Dieter\Pages\Controllers;
+<?php namespace DieterVyncke\Pages\Controllers;
 
 use BackendMenu;
 use Backend\Classes\Controller;
-use Dieter\Pages\Models\Page;
-use Dieter\Pages\Models\PageBlock;
-use Dieter\Pages\Models\PagePhoto;
+use DieterVyncke\Pages\Models\Page;
+use DieterVyncke\Pages\Models\PageBlock;
+use DieterVyncke\Pages\Models\PagePhoto;
 use Flash;
 
 /**
@@ -26,12 +26,12 @@ class Pages extends Controller
     {
         parent::__construct();
 
-        BackendMenu::setContext('Dieter.Pages', 'pages', 'pages');
+        BackendMenu::setContext('DieterVyncke.Pages', 'pages', 'pages');
 
-		$this->addCss('/plugins/dieter/pages/assets/css/sortable.css');
-		$this->addCss('/plugins/dieter/pages/assets/css/thumbnail.css');
-        $this->addJs('/plugins/dieter/pages/assets/js/html5sortable.js');
-        $this->addJs('/plugins/dieter/pages/assets/js/sortable.js');
+		$this->addCss('/plugins/DieterVyncke/pages/assets/css/sortable.css');
+		$this->addCss('/plugins/DieterVyncke/pages/assets/css/thumbnail.css');
+        $this->addJs('/plugins/DieterVyncke/pages/assets/js/html5sortable.js');
+        $this->addJs('/plugins/DieterVyncke/pages/assets/js/sortable.js');
     }
 
 	public function index_onUpdatePagePosition()

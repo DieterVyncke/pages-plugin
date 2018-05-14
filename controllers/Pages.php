@@ -28,10 +28,10 @@ class Pages extends Controller
 
         BackendMenu::setContext('DieterVyncke.Pages', 'pages', 'pages');
 
-		$this->addCss('/plugins/DieterVyncke/pages/assets/css/sortable.css');
-		$this->addCss('/plugins/DieterVyncke/pages/assets/css/thumbnail.css');
-        $this->addJs('/plugins/DieterVyncke/pages/assets/js/html5sortable.js');
-        $this->addJs('/plugins/DieterVyncke/pages/assets/js/sortable.js');
+		$this->addCss('/plugins/dietervyncke/pages/assets/css/sortable.css');
+		$this->addCss('/plugins/dietervyncke/pages/assets/css/thumbnail.css');
+        $this->addJs('/plugins/dietervyncke/pages/assets/js/html5sortable.js');
+        $this->addJs('/plugins/dietervyncke/pages/assets/js/sortable.js');
     }
 
 	public function index_onUpdatePagePosition()

@@ -3,10 +3,10 @@
 # ===================================
 
 # Model List Column configuration
-list: $/DieterVyncke/pages/models/page/columns.yaml
+list: $/dietervyncke/pages/models/page/columns.yaml
 
 # Model Class name
-modelClass: DieterVyncke\Pages\Models\Page
+modelClass: dietervyncke\Pages\Models\Page
 
 # List Title
 title: Manage Pages

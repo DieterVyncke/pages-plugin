@@ -5,10 +5,10 @@
 pageblocks:
     label: Page Block
     manage:
-        list: ~/plugins/DieterVyncke/pages/models/pageblock/columns.yaml
-        form: ~/plugins/DieterVyncke/pages/models/pageblock/fields.yaml
+        list: ~/plugins/dietervyncke/pages/models/pageblock/columns.yaml
+        form: ~/plugins/dietervyncke/pages/models/pageblock/fields.yaml
     view:
-        list: ~/plugins/DieterVyncke/pages/models/pageblock/columns.yaml
+        list: ~/plugins/dietervyncke/pages/models/pageblock/columns.yaml
         defaultSort:
             column: sort_order
             direction: asc
@@ -18,10 +18,10 @@ pageblocks:
 pagephotos:
     label: Page Photo
     manage:
-        list: ~/plugins/DieterVyncke/pages/models/pagephoto/columns.yaml
-        form: ~/plugins/DieterVyncke/pages/models/pagephoto/fields.yaml
+        list: ~/plugins/dietervyncke/pages/models/pagephoto/columns.yaml
+        form: ~/plugins/dietervyncke/pages/models/pagephoto/fields.yaml
     view:
-        list: ~/plugins/DieterVyncke/pages/models/pagephoto/columns.yaml
+        list: ~/plugins/dietervyncke/pages/models/pagephoto/columns.yaml
         defaultSort:
             column: sort_order
             direction: asc

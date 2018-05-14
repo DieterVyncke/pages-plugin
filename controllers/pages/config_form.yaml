@@ -6,10 +6,10 @@
 name: Page
 
 # Model Form Field configuration
-form: $/DieterVyncke/pages/models/page/fields.yaml
+form: $/dietervyncke/pages/models/page/fields.yaml
 
 # Model Class name
-modelClass: DieterVyncke\Pages\Models\Page
+modelClass: dietervyncke\Pages\Models\Page
 
 # Default redirect location
 defaultRedirect: dietervyncke/pages/pages

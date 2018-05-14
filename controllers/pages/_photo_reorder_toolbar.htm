@@ -37,7 +37,7 @@
     class="btn btn-reorder oc-icon-list-ol"
     disabled="disabled"
     onclick="$(this).data('request-data', {
-    checked: $('.html5sortable .control-list').listWidget('getChecked'), project_id: <?php echo $this->formGetModel()->id; ?> })"
+    checked: $('.html5sortable .control-list').listWidget('getChecked'), page_id: <?php echo $this->formGetModel()->id; ?> })"
     data-request-success="initializeSorting();"
     data-request="onUpdatePhotoPosition"
     data-stripe-load-indicator>
